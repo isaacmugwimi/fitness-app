@@ -10,11 +10,13 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
+  justify-content: center;
 }
 
 .right-h {
   flex: 1;
-  border: 1px solid blue;
+  position: relative;
+  background-color: var(--orange);
 }
 
 .the-best-ad {
@@ -43,4 +45,148 @@
   border-radius: 3rem;
   left: 8px;
   z-index: 1;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: white;
+  text-overflow: inherit;
+}
+
+.span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-overflow: inherit;
+  padding-top: 1rem;
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 80%;
+}
+
+.figures {
+  display: flex;
+  gap: 2rem;
+}
+
+.figures > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.figures > div > span:nth-of-type(1) {
+  font-size: 2.4rem;
+  color: white;
+}
+
+.figures > div > span:nth-of-type(2) {
+  color: rgba(255, 255, 255, 0.377);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}
+.btns > button {
+  width: 8rem;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+.btns > button:nth-child(1) {
+  background: var(--orange);
+}
+
+.btns > button:nth-child(2) {
+  background: none;
+  border: 2px solid var(--orange);
+}
+
+.right-h > button {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  color: black;
+}
+
+.heartRate {
+  border-radius: 5px;
+  background-color: var(--darkGrey);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+  position: absolute;
+  top: 5.7rem;
+  right: 5rem;
+}
+
+.heartRate > img {
+  width: 2rem;
+}
+
+.heartRate > span:nth-child(2) {
+  color: var(--gray);
+  font-size: 1.2rem;
+}
+.heartRate > span:nth-child(3) {
+  color: var(--lightgray);
+  font-size: 1.8rem;
+}
+
+.right-h .heroImage {
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+  width: 18rem;
+  z-index: 2;
+}
+.heroImageback {
+  position: absolute;
+  top: 5rem;
+  right: 18rem;
+  width: 12rem;
+  z-index: 1;
+}
+.calories {
+  display: flex;
+  gap: 2rem;
+
+  background-color: var(--caloryCard);
+  border-radius: 5px;
+  position: absolute;
+  top: 29rem;
+  right: 27rem;
+  padding: 1rem;
+  width: max-content;
+}
+
+.calories > img {
+  width: 3rem;
+}
+
+.calories > div {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: space-between;
+}
+
+.calories > div > span:nth-child(1) {
+  color: var(--appColor);
+}
+
+.calories > div > span:nth-child(2) {
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
 }
