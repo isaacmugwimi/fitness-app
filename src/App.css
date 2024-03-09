@@ -17,6 +17,7 @@
   flex-direction: column;
   gap: 4rem;
   overflow: hidden;
+  color: white;
 }
 ::-webkit-scrollbar {
   display: none;

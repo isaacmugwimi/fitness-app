@@ -1,0 +1,86 @@
+.testimonials {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+
+.left-t {
+  flex: 1 1;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.left-t > :nth-child(1) {
+  color: var(--orange);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.left-t > :nth-child(2),
+.left-t > :nth-child(3) {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.left-t > :nth-child(3) {
+  color: white;
+}
+
+.left-t > :nth-child(4) {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+.right-t {
+  flex: 1 1;
+  position: relative;
+}
+
+.right-t > :nth-child(1) {
+  object-fit: cover;
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  right: 13rem;
+  top: 2rem;
+  z-index: 3;
+}
+
+.arrows {
+  display: flex;
+  gap: 1.3rem;
+  position: absolute;
+  top: 21rem;
+  left: 2rem;
+}
+.arrows img {
+  width: 1.3rem;
+}
+
+.imgBackground1 {
+  border: 2px solid var(--orange);
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  right: 14rem;
+  top: 1rem;
+  z-index: 0;
+  background: transparent;
+}
+
+.imgBackground2 {
+  background: var(--orange);
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  right: 12rem;
+  top: 3rem;
+  z-index: 1;
+}
