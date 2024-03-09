@@ -1,0 +1,101 @@
+.planData {
+  margin-top: -3rem;
+}
+
+.planData > :nth-child(1) {
+  display: flex;
+  font-size: 3.3rem;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+
+  height: fit-content;
+}
+
+.planDiv {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin: 3.5rem 7rem;
+}
+
+.plansDataDiv {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--darkGrey);
+  padding: 2rem;
+}
+
+.plansDataDiv:nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+
+.plansDataDiv:nth-child(2) > button {
+  color: var(--orange);
+}
+
+.plansDataDiv > :nth-child(1) {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+}
+.plansDataDiv .itemsName {
+  font-size: 1.1rem;
+}
+
+.plansDataDiv .itemPrice {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+/* .features {
+  margin-top: 2rem;
+} */
+
+.featureContainer {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+.featureContainer > img {
+  width: 1.2rem;
+}
+.moreBenefits {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.moreBenefits > img {
+  width: 1.3rem;
+}
+
+.plansDataDiv > button {
+  width: auto;
+  color: black;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.6rem;
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.plansDataDiv > button:hover{
+  transform: scale(0.8);
+  transition: 0.3s ease-in-out;
+}
+

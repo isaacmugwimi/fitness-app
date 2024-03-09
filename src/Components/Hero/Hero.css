@@ -177,12 +177,12 @@
 .calories > div {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  /* width: fit-content; */
   justify-content: space-between;
 }
 
 .calories > div > span:nth-child(1) {
-  color: var(--appColor);
+  color: var(--gray);
 }
 
 .calories > div > span:nth-child(2) {

@@ -1,0 +1,38 @@
+.item {
+  background-color: var(--caloryCard);
+
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  padding: 1.7rem;
+  color: white;
+  line-height: 1.7rem;
+}
+
+.item > span {
+  font-weight: 650;
+  font-size: 1.1rem;
+}
+
+.item > div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}
+.item > div img {
+  width: 1.2rem;
+}
+
+.item:hover {
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+.item > :nth-child(1) {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  padding-bottom: 0.5rem;
+}
