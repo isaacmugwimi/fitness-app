@@ -1,17 +1,22 @@
 import React from "react";
 import "./PlanData.css";
-import tick from "../assets/tick.png";
+
 import whiteTick from "../assets/whiteTick.png";
 import { plansData } from "../assets/data/plansData.js";
-import rarrowIcon from "../assets/rightArrow.png";
+import arrowIcon from "../assets/rightArrow.png";
 const PlanData = () => {
+  const mobile = window.innerWidth <= 768 ? true : false;
+   {/* <div className={`${mobile ? "blur-head" : ""}`}></div> */}
   return (
     <div className="planData">
-      <div>
-        <span className="transparent-text">ready to start </span>{" "}
+      <div >
+       
+        <span className="transparent-text ">ready to start </span>{" "}
         <span>your journey</span>{" "}
         <span className="transparent-text">now with us</span>
       </div>
+      <div className="blur planData-blur1"></div>
+      <div className="blur planData-blur2"></div>
 
       {/* PlanDiv card */}
       <div className="planDiv">
@@ -31,7 +36,7 @@ const PlanData = () => {
 
             <div className="moreBenefits">
               <span>See more benefits</span>
-              <img src={rarrowIcon} alt="" />
+              <img src={arrowIcon} alt="" />
             </div>
             <button>Join Now</button>
           </div>

@@ -12,9 +12,11 @@
 
 .email-right {
   flex: 1;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  gap: 1rem;
 }
 
 .email-right-div {
@@ -40,11 +42,12 @@
   border: none;
 }
 
-.email-right-div > :nth-child(1) {
+.email-right-div > input {
   font-size: 1rem;
   letter-spacing: 2px;
   outline: none;
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: transparent;
   color: white;
   border: 0;
   font-weight: 500;
@@ -69,4 +72,42 @@
 }
 ::placeholder {
   color: white;
+}
+
+.toastSpace {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  background-color: #4caf50; /* Green background color for success */
+}
+
+
+@media screen and (max-width: 768px) {
+  .email{
+    flex-direction: column;
+  }
+  .email-left> span{
+    /* display: flex;
+    flex-direction: column; */
+    font-size: xx-large;
+  }
+  .email-right-div > input,
+  .email-right-div > :nth-child(2) {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding: 0;
+    
+  }
+
+
+  .email-right-div{
+    gap: 0.2rem;
+    padding: 0.4rem;
+    width: 100%;
+  }
 }

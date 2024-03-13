@@ -10,6 +10,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <hr />
+
+      <div className="blur footer-blur"></div>
       <div className="socialIcons">
         <img src={github} alt="" />
         <img src={instagram} alt="" />

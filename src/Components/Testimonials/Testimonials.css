@@ -67,7 +67,7 @@
 .imgBackground1 {
   border: 2px solid var(--orange);
   position: absolute;
-  width: 17rem;
+  width: 16.5rem;
   height: 20rem;
   right: 14rem;
   top: 1rem;
@@ -78,9 +78,64 @@
 .imgBackground2 {
   background: var(--orange);
   position: absolute;
-  width: 17rem;
+  width: 16.5rem;
   height: 20rem;
-  right: 12rem;
+  right: 12.5rem;
   top: 3rem;
   z-index: 1;
+}
+
+/* mobile design */
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+  .left-t>:nth-child(2),
+  .left-t>:nth-child(3){
+    font-size: xx-large;
+  }
+  .left-t > :nth-child(4) {text-align: start;
+  font-size: 0.8rem;
+margin-top: -1rem;
+line-height: 1.4;
+}
+
+.right-t{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  
+
+}
+  .disturbed1, .disturbed2{
+    font-size: small;
+    letter-spacing: 1px;
+    letter-spacing: 1px !important;
+    font-weight: 300; 
+
+  }
+.right-t>div{
+  position: relative;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.right-t .gymImage{
+  position: relative;
+align-self: center;
+right: 0;
+ top: 0;
+}
+
+.right-t .arrows{
+  display: block;
+  bottom: 0;
+  left:0;
+}
 }

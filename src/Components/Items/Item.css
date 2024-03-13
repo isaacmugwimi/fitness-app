@@ -36,3 +36,29 @@
   fill: white;
   padding-bottom: 0.5rem;
 }
+
+/* mobile design */
+
+@media screen and (max-width: 768px) {
+  .item {
+    padding: 0.9rem;
+    gap: 0rem;
+    line-height: 1.4;
+  }
+
+  .item > span {
+    font-weight: 650;
+    font-size: small;
+  }
+  .item > p {
+    font-size: small;
+  }
+
+  .item > div img {
+    width: 1rem;
+  }
+  .item > :nth-child(1) {
+
+    width: 1.5rem;
+  }
+}

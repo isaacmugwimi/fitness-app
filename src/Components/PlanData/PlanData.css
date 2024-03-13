@@ -1,6 +1,19 @@
 .planData {
   margin-top: -3rem;
 }
+/* .planData
+.planData-blur1 {
+  width: 10%;
+  filter: blur(200px);
+  padding: 10%;
+  margin-top: 10%;
+}
+.planData-blur2 {
+  width: 10%;
+  filter: blur(200px);
+  padding: 10%;
+  margin-left: 80%;
+} */
 
 .planData > :nth-child(1) {
   display: flex;
@@ -94,8 +107,87 @@
   cursor: pointer;
 }
 
-.plansDataDiv > button:hover{
+.plansDataDiv > button:hover {
   transform: scale(0.8);
   transition: 0.3s ease-in-out;
 }
 
+/* mobile design */
+
+@media screen and (max-width: 768px) {
+.planData>:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.planData>:nth-child(1)>span{
+  font-size: xx-large;
+  padding-bottom: 0;
+  line-height: 0.3;
+  text-align: center;
+  
+}
+.blur-head{
+  width: 100%;
+  filter: blur(100px);
+  padding: 7%;
+  background-color: #f48915;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(7px);
+
+}
+.planDiv{
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0rem;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.planDiv .plansDataDiv{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+}
+.plansDataDiv:nth-child(2){
+
+  transform: none;
+}
+.plansDataDiv {
+  padding: 1rem;
+  gap: 0.8rem;
+  line-height: 0.5;
+}
+.plansDataDiv .itemsName {
+  font-size: large;
+}
+.plansDataDiv .itemPrice {
+  font-size: x-large;
+  font-weight: 600;
+
+}
+
+.featureContainer {
+  gap: 0.7rem;
+  line-height: 1.1;
+}
+
+.featureContainer>span{
+  font-size: small;
+}
+
+.moreBenefits> span{
+margin-top: -1rem;
+}
+
+.moreBenefits > img {
+  margin-top: -1rem;
+  align-items: center;
+  width: 1.1rem;
+}
+}

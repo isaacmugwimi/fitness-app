@@ -19,14 +19,14 @@ const Reasons = () => {
       </div>
       <div className="right-r-side">
         <span>some reasons</span>
-        <div>
+        <div className="why-choose-us">
           <span className="transparent-text">why</span>
           <span>choose us?</span>
         </div>
         <div className="mainReasonsDiv">
           <div>
             <img src={tick} alt=""></img>
-            <span>over 140+ expert coachs</span>
+            <span>over 140+ expert coach</span>
           </div>
           <div>
             <img src={tick} alt="" />

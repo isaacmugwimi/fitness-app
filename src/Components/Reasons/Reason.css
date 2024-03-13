@@ -105,3 +105,68 @@
 .partnersDiv > img {
   width: 2.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .Reason {
+    display: flex;
+    gap: 2em;
+    margin: 0 1rem;
+    flex-direction: column;
+  }
+  /* 
+  .right-r-side{
+
+
+  } */
+
+  .right-r-side .why-choose-us {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0rem;
+  }
+
+  .right-r-side .why-choose-us > span {
+    font-size: xx-large;
+  }
+
+  .mainReasonsDiv > div > img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .mainReasonsDiv > div > span {
+    font-size: small;
+  }
+
+  .partners {
+    font-size: large;
+  }
+
+  .partnersDiv > img {
+    width: 2rem;
+  }
+
+  .left-r-side{
+   grid-auto-rows: auto;
+   overflow: hidden;
+   gap: 0.3rem;
+  }
+
+
+  .left-r-side>:nth-child(1){
+    width: 22vw;
+    height: 86vw;
+  }
+
+  .left-r-side>:nth-child(2){
+    width: 66vw;
+    height: 50vw;
+  }
+  .left-r-side>:nth-child(3){
+    width: 35vw;
+    height: 34vw;
+  }
+  .left-r-side>:nth-child(4){
+    width: 29vw;
+    height: 34vw;
+  }
+}
