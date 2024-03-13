@@ -8,7 +8,7 @@ const PlanData = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
    {/* <div className={`${mobile ? "blur-head" : ""}`}></div> */}
   return (
-    <div className="planData">
+    <div className="planData" id="plans">
       <div >
        
         <span className="transparent-text ">ready to start </span>{" "}

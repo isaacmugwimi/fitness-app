@@ -19,7 +19,9 @@
   gap: 2rem;
   margin: 1.5rem 2.5rem;
  
+ 
 }
+
 
 
 /* mobile design */
@@ -31,7 +33,7 @@
   .programData {
     display: flex;
     flex-direction: column;
-
+    margin: 8%;
     align-items: center;
     
   }
@@ -48,10 +50,10 @@
     font-size: xx-large;
     flex-direction: column;
     margin: 0;
-   
-
-   
+     
   }
+
+ 
   
 
 }

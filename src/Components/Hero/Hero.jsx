@@ -6,11 +6,13 @@ import heroImageBack from "../assets/hero_image_back.png";
 import heart from "../assets/heart.png";
 import calories from "../assets/calories.png";
 import { circIn, easeIn, easeOut, motion, Tween } from "framer-motion";
+import NumberCounter from "number-counter";
+
 const Hero = () => {
   const transition = { type: "easeIn", duration: 3 };
   const mobile = window.innerHeight <= 768 ? true : false;
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="blur hero-blur"></div>
       <div className="left-h">
         <Header />
@@ -47,15 +49,21 @@ const Hero = () => {
         {/* Figures */}
         <div className="figures">
           <div>
-            <span>+140</span>
+            <span>
+              <NumberCounter preFix="+" start={90} delay="4" end={140} />
+            </span>
             <span>Expert Coaches</span>
           </div>
           <div>
-            <span>+978</span>
+            <span>
+              <NumberCounter start={910} preFix={"+"} delay="6" end={978} />
+            </span>
             <span>Members Joined</span>
           </div>
           <div>
-            <span>+50</span>
+            <span>
+              <NumberCounter start={5} preFix={"+"} delay="2" end={50} />
+            </span>
             <span>Fitness Programs</span>
           </div>
         </div>
@@ -73,7 +81,7 @@ const Hero = () => {
         <motion.div
           className="heartRate"
           initial={{ right: "-1rem" }}
-          whileInView={{ left: mobile?"1rem":"4rem" }}
+          whileInView={{ left: mobile ? "1rem" : "4rem" }}
           transition={{ ...transition, type: "tween" }}
         >
           <img src={heart} alt="" />

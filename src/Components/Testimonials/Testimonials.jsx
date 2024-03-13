@@ -18,7 +18,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonial">
       {/* code for the right of testimonials */}
       <div className="left-t">
         <span>Testimonials</span>
@@ -66,7 +66,7 @@ const Testimonials = () => {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ opacity: 0, x: -100 }}
-          transition={{ ...transition, duration: 2 }}
+          transition={{ ...transition, duration: 1 }}
         />
         <div className="arrows">
           <img
@@ -102,6 +102,7 @@ const Testimonials = () => {
         ></motion.div>
       </div>
     </div>
+
   );
 };
 

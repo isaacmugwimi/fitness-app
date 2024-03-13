@@ -134,8 +134,11 @@ right: 0;
 }
 
 .right-t .arrows{
-  display: block;
+  display: flex;
   bottom: 0;
   left:0;
+  gap: 1rem;
+
+  
 }
 }
